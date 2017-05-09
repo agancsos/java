@@ -3,7 +3,7 @@
 	Author     : Abel Gancsos
 	(c)        : Abel Gancsos Productions
 	v.         : v. 1.0.0
-	Description:
+	Description: This class is a custom File class that helps manage the file system
 */
 
 /*              IMPORTS                   */
@@ -19,20 +19,35 @@ public class AMGFile{
 	public File sFile;
 	public File tFile;
 
+	/*
+		This is the constructor based on the source path
+	*/
 	public AMGFile(String source){
 		sPath = source.replace("\\","/");
 		sFile = new File(sPath);
 	}
+
+	/*
+		This is the constructor based on the source path and target path
+	*/
     public AMGFile(String source,String target){
         sPath = source.replace("\\","/");
 		tPath = target.replace("\\","/");
 		sFile = new File(sPath);
 		tFile = new File(tPath);
     }
+
+	/*
+		This method retrieves the directory of the source path
+	*/
 	public String getParentName(){
 		String[] comps = sPath.split("/");
 		return comps[comps.length - 1];
 	}
+
+	/*
+		This method copies the file to the target path
+	*/
 	public void copy(){
 		if(sFile.exists()){
 			if(!tFile.exists()){
@@ -57,6 +72,10 @@ public class AMGFile{
 		else{
 		}	
 	}
+
+	/*
+		This method makes the source directory
+	*/ 
 	public void mkdir(){
 		if(!sFile.exists()){
 			try{

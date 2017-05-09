@@ -3,7 +3,7 @@
 	Author     : Abel Gancsos
 	(c)        : Abel Gancsos Productions
 	v.         : v. 1.0.0
-	Description:
+	Description: This class manages the GUI for the application.
 */
 
 /*              IMPORTS                   */
