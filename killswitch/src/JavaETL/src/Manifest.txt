@@ -1,3 +1,0 @@
-Main-Class: JavaETL
-Class-Path: *.jar sqlite-jdbc-3.16.1.jar
-
