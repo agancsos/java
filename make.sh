@@ -8,13 +8,13 @@ APP_ROOT=$(dirname %1)
 
 ## Compile Java code
 javac \
-	$APP_ROOT/com/metCS633Project/*.java 
+	$APP_ROOT/com/<package>/*.java 
 
 ## Create Manifest file
-echo "Main-Class: com.metCS633Project.METCS633ProjectMain\n"  > $APP_ROOT/Manifest.txt
+echo "Main-Class: com.<package>.<mainClass>\n"  > $APP_ROOT/Manifest.txt
 
 ## Create Jar file
 jar cvfm \
 	$APP_ROOT/../bin/METCS633.jar \
 	$APP_ROOT/Manifest.txt \
-	$APP_ROOT/com/metCS633Project/*.class \
+	$APP_ROOT/com/<package>/*.class \
