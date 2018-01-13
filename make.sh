@@ -15,6 +15,6 @@ echo "Main-Class: com.<package>.<mainClass>\n"  > $APP_ROOT/Manifest.txt
 
 ## Create Jar file
 jar cvfm \
-	$APP_ROOT/../bin/METCS633.jar \
+	$APP_ROOT/../bin/<executable>.jar \
 	$APP_ROOT/Manifest.txt \
 	$APP_ROOT/com/<package>/*.class \
