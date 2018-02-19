@@ -1,0 +1,36 @@
+################################################################################
+#                                   DEVNOTES                                   #
+################################################################################
+
+================================================================================
+#                                    CLASSES                                   #
+================================================================================
+* AMGSystem    : This class is used for file system operations
+* AMGString    : This class is used for extended string operations
+* AMGDataOra   : This class is used for Oracle specific database operations
+* AMGOraRefresh: This is the session class used for utility operations
+================================================================================
+
+================================================================================
+#                                    DESIGN                                    #
+================================================================================
+The design for this utility is based on the functional areas of each operation
+needed to fulfill the neccessary tasks.  It's also based on leveraging as many
+APIs needed for the operations opposed to simply running system commands.  The
+utility was implemented using Java in order to leverage more native Oracle
+interaction.
+================================================================================
+
+================================================================================
+#                                  MECHANISM                                   #
+================================================================================
+
+================================================================================
+
+================================================================================
+#                                  COPYRIGHT                                   #
+================================================================================
+These objects, classes, and mechanisms are proprietary and are owned by the 
+author of this utility.  Rewrite, redistrubution, or rebranding of any of these
+components are strictly not allowed and voids the license agreement.
+================================================================================
