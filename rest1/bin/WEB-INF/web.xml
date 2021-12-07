@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+    "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+	<description>
+	</description>
+	<display-name>Rest1</display-name>
+	
+	<listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+
+	<servlet>
+        <servlet-name>Home</servlet-name>
+        <servlet-class>com.rest1.viewcontrollers.HomeController</servlet-class>
+        <servlet-alias>home</servlet-alias>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Home</servlet-name>
+        <url-pattern>/doc/*</url-pattern>
+		<load-on-startup>1</load-on-startup>
+    </servlet-mapping> 
+
+  	<servlet>
+    	<servlet-name>Rest1</servlet-name>
+    	<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+	  	<servlet-alias>rest1</servlet-alias>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet-mapping>
+        <servlet-name>Rest1</servlet-name>
+        <url-pattern>/api/*</url-pattern>
+    </servlet-mapping>
+
+</web-app>    

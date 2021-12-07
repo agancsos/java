@@ -1,0 +1,2 @@
+com.rest1.servicecontrollers.MathController=org.springframework.stereotype.Component
+com.rest1.servicecontrollers.PersonController=org.springframework.stereotype.Component

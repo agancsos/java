@@ -1,0 +1,46 @@
+* {
+    margin : 0;
+	padding : 0;
+	overflow-x : hidden;
+}
+
+html {
+    height : 100%;
+	width : 100%;
+}
+
+body {
+	height : 100%;
+	width : 100%;
+}
+
+h1 {
+	color : white;
+}
+
+div { 
+    position : relative;
+}
+
+#banner, #links, #main, #footer {
+    width : 100%;
+}
+
+#banner {
+    padding-top : 30px;
+    padding-bottom : 30px; 
+	background-color : rgb(0,50,0);
+}
+
+#main {
+    min-height : 90%;
+}
+
+#footer {
+    padding-top : 20px;
+    padding-bottom : 20px;
+    font-size : 8pt; 
+	text-align : center;
+	background-color : black;
+	color : grey;
+}
