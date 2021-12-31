@@ -1,1 +1,1 @@
-Main-Class: rest1.Rest1Application
+Main-Class: com.rest2.Rest2Application
