@@ -1,7 +1,7 @@
 /*
 	Name       : killswitch.java
 	Author     : Abel Gancsos
-	(c)        : Abel Gancsos Productions
+	(c)        : 
 	v.         : v. 1.0.0
 	Description: This application makes a backup of core files and keeps track
                  of what files were found in each stage.  Folders include 

@@ -1,7 +1,7 @@
 /*
 	Name       : amgfile.java
 	Author     : Abel Gancsos
-	(c)        : Abel Gancsos Productions
+	(c)        : 
 	v.         : v. 1.0.0
 	Description: This class is a custom File class that helps manage the file system
 */

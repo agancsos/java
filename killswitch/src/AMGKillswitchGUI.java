@@ -1,7 +1,7 @@
 /*
 	Name       : amgkillswitchgui.java
 	Author     : Abel Gancsos
-	(c)        : Abel Gancsos Productions
+	(c)        : 
 	v.         : v. 1.0.0
 	Description: This class manages the GUI for the application.
 */
@@ -95,7 +95,7 @@ public class AMGKillswitchGUI extends JFrame implements Runnable{
 
         /*                        Footer labels                            */
         String year = (new SimpleDateFormat("yyyy")).format(new Date());
-        JLabel copyrightLabel = new JLabel("(c) " + year + " Abel Gancsos Productions");
+        JLabel copyrightLabel = new JLabel("(c) " + year + " ");
         copyrightLabel.setForeground(Color.WHITE);
         footer.add(copyrightLabel);
 

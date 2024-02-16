@@ -1,7 +1,7 @@
 /*
 	Name       : killswitchdata.java
 	Author     : Abel Gancsos
-	(c)        : Abel Gancsos Productions
+	(c)        : 
 	v.         : v. 1.0.0
 	Description: This is the class that performs all the backend processes.
 */
