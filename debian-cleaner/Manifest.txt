@@ -1,0 +1,2 @@
+Main-Class: MainClass
+Class-Path: lib/org.eclipse.jgit-6.8.0.202311291450-r.jar lib/slf4j-api-2.0.9.jar
