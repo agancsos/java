@@ -1,0 +1,70 @@
+<html>
+	<title>PlusONE | Home</title>
+	<head>
+		<link rel="stylesheet" href="main.css">
+		<script src="functions-all.js"></script>
+	</head>
+	<body>
+		<div id="banner">
+			<div id="banner-inner">
+				<div class="logo">PlusONE</div>
+				<button id="add-button" type="button" onclick="window.location='./add.html'">+</button>
+			</div>
+		</div>
+		<div id="main">
+			<div id="main-inner">
+				<script>
+					let params = FormHelpers.getQueryParameters(window.location);
+					if (params["pollId"]) {
+						let poll  = RestHelpers.invokeGet("http://localhost:8080/api/polls/get?id=" + params["pollId"]);
+						document.write("<h2>" + poll.text + "</h2>");
+						if (Object.keys(poll.options).length < 1) {
+							document.write("No options available...");
+						} else {
+							for (let [key, value] of Object.entries(poll.options)) {
+								let radio = document.createElement("input");
+								radio.setAttribute("type", "radio");
+								radio.setAttribute("name", "vote");
+								radio.setAttribute("id", key);
+								radio.setAttribute("value", key);
+								radio.pollId = params["pollId"];
+								radio.addEventListener("click", FormHelpers.submitVote, false);
+								document.getElementById("main-inner").appendChild(radio);
+								let label = document.createElement("label");
+								label.setAttribute("for", key);
+								label.innerHTML = value;
+								document.getElementById("main-inner").appendChild(label);
+							}
+						}
+					} else {
+						let polls  = RestHelpers.invokeGet("http://localhost:8080/api/polls/list");
+						if (polls.results.length < 1) {
+							document.write("Nothing to display...");
+						} else {
+							let table   = document.createElement("table");
+							let row     = table.insertRow();
+							let headers = ["Poll", "CreatedDate"]; 
+							for (let i in headers) {
+								row.insertCell().outerHTML = "<th>" + headers[i] + "</th>";
+							}	
+							for (let i in polls.results) {
+								let poll = polls.results[i];
+								console.log(JSON.stringify(poll));
+								row      = table.insertRow();
+								row.insertCell().innerHTML = "<td><a href='./index.html?pollId=" + poll.pollId + "'>" + poll.text + "</a></td>";
+								row.insertCell().appendChild(document.createTextNode(poll.createdDate));
+							}
+							document.getElementById("main-inner").appendChild(table);
+						}
+					}
+				</script>
+			</div>
+		</div>
+		<div id="footer">
+			<div id="footer-inner">
+				&copy; <script>document.write((new Date()).getFullYear());</script> PlusONE<br/>
+				All Rights Reserved
+			</div>
+		</div>
+	</body>
+</html>

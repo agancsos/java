@@ -1,0 +1,28 @@
+<html>
+	<title>PlusONE | Create Poll</title>
+	<head>
+		<link rel="stylesheet" href="main.css">
+		<script src="functions-all.js"></script>
+	</head>
+	<body>
+		<div id="banner">
+			<div id="banner-inner">
+				<div class="logo">PlusONE</div>
+				<button id="add-button" type="button" onclick="window.location='./add.html'">+</button>
+			</div>
+		</div>
+		<div id="main">
+			<div id="main-inner">
+				<input type="text" name="text" id="text" placeholder="Poll Question"/>
+				<textarea name="options" id="options" placeholder="Poll Options"></textarea>
+				<button type="button" class="submit-button" onclick="FormHelpers.submitPoll">Create Poll</button>
+			</div>
+		</div>
+		<div id="footer">
+			<div id="footer-inner">
+				&copy; <script>document.write((new Date()).getFullYear());</script> PlusONE<br/>
+				All Rights Reserved
+			</div>
+		</div>
+	</body>
+</html>

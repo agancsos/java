@@ -1,0 +1,18 @@
+{
+	"database": {
+		"provider": "postgres",
+		"server": "127.0.0.1",
+		"database": "plusone",
+		"dbaUsername": "postgres",
+		"dbaPassword": "cG9zdGdyZXM=",
+		"username": "poadmin",
+		"password": "dGFkbWlu"
+	},
+	"mq": {
+		"url": "tcp://localhost:61616",
+		"username": "poqadmin",
+		"password": "dG1xYWRtaW4=",
+		"queue": "vqueue",
+		"disabled": true
+	}
+}
