@@ -40,7 +40,7 @@ make run name-test repo=https://github.com/jdoe/java.git dry_run=0 output_path=.
 ```
 
 ```sh
-java -jar dist/debian-cleaner.jar --repo https://github.com/jdoe/java.git --dry 0 123123123123123
+java -jar dist/github-cleaner.jar --repo https://github.com/jdoe/java.git --dry 0 123123123123123
 ```
 
 ## References
