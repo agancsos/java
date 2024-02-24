@@ -1,4 +1,4 @@
-# Debian Cleaner
+# GitHub Cleaner
 
 ## Synopsis
 A utility to sanatize  GitHub repositories.
