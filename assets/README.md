@@ -35,7 +35,7 @@ The solution is also driven by one common structure that's used in all the compo
 | -- | -- |
 | -f                      | Full path to configuration file.                          |
 
-### TransactionAPI
+### AssetsAPI
 The RESTful API leverages the Spring Boot framework and uses Model-View-Controller (MVC) components to expose an API through an embedded Tomcat server.  The API exposes the following endpoints.
 
 #### Endpoints
