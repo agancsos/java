@@ -13,7 +13,7 @@ import com.assets.models.Asset;
 import org.springframework.http.MediaType;
 
 @RestController
-@RequestMapping(value="/api/polls")
+@RequestMapping(value="/api")
 class AssetsApiController {
 	private AssetService assetService          = null;
 	private ConfigurationService configService = ConfigurationService.getInstance("");
