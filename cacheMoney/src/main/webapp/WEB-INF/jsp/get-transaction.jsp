@@ -38,6 +38,7 @@
 						</td></tr>
                        	<tr><th>Amount</th><td>$${transaction.amount}</td></tr>
 						<tr><th>Balance</th><td>$${transaction.balance}</td></tr>
+			<tr><th>Processed</th><td>${transaction.processed}</td></tr>
                        	<tr><th>Date</th><td>${transaction.lastUpdatedDate}</td></tr>
                         </table>	
     				</c:otherwise>
