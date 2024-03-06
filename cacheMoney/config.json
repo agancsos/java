@@ -1,0 +1,19 @@
+{
+	"database": {
+		"provider": "postgres",
+		"server": "127.0.0.1",
+		"database": "transactions2",
+		"dbaUsername": "postgres",
+		"dbaPassword": "cG9zdGdyZXM=",
+		"username": "tadmin",
+		"password": "dGFkbWlu"
+	},
+	"mq": {
+		"url": "tcp://localhost:61616",
+		"username": "tmqadmin",
+		"password": "dG1xYWRtaW4=",
+		"queue": "tqueue2",
+		"disabled": true
+	}
+}
+
