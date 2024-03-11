@@ -29,19 +29,19 @@ public class ConfigurationService {
 				String envConfig = "{\"database\": {";
 				envConfig += "\"provider\": \"postgres\"";
 				for (String varName : varNames) {
-					if (System.getenv(String.format("ASSETS_%s", varName)) != null) {
+					if (System.getenv(String.format("CACHEMONEY_%s", varName)) != null) {
 						if (varName.equals("SERVER")) {
-							envConfig += String.format(",\"server\": \"%s\"", System.getenv(String.format("ASSETS_%s", varName)));
+							envConfig += String.format(",\"server\": \"%s\"", System.getenv(String.format("CACHEMONEY_%s", varName)));
 						} else if (varName.equals("DATABASE")) {
-							envConfig += String.format(",\"database\": \"%s\"", System.getenv(String.format("ASSETS_%s", varName)));
+							envConfig += String.format(",\"database\": \"%s\"", System.getenv(String.format("CACHEMONEY_%s", varName)));
 						} else if (varName.equals("DBA_USERNAME")) {
-							envConfig += String.format(",\"dbaUsername\": \"%s\"", System.getenv(String.format("ASSETS_%s", varName)));
+							envConfig += String.format(",\"dbaUsername\": \"%s\"", System.getenv(String.format("CACHEMONEY_%s", varName)));
 						} else if (varName.equals("DBA_PASSWORD")) {
-							envConfig += String.format(",\"dbaPassword\": \"%s\"", System.getenv(String.format("ASSETS_%s", varName)));
+							envConfig += String.format(",\"dbaPassword\": \"%s\"", System.getenv(String.format("CACHEMONEY_%s", varName)));
 						} else if (varName.equals("USERNAME")) {
-							envConfig += String.format(",\"username\": \"%s\"", System.getenv(String.format("ASSETS_%s", varName)));
+							envConfig += String.format(",\"username\": \"%s\"", System.getenv(String.format("CACHEMONEY_%s", varName)));
 						} else if (varName.equals("PASSWORD")) {
-							envConfig += String.format(",\"password\": \"%s\"", System.getenv(String.format("ASSETS_%s", varName)));
+							envConfig += String.format(",\"password\": \"%s\"", System.getenv(String.format("CACHEMONEY_%s", varName)));
 						}
 					}
 				}
