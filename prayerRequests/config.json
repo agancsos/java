@@ -1,0 +1,19 @@
+{
+	"database": {
+		"provider": "postgres",
+		"server": "127.0.0.1",
+		"database": "prayerrequests",
+		"dbaUsername": "postgres",
+		"dbaPassword": "cG9zdGdyZXM=",
+		"username": "pradmin",
+		"password": "cHJhZG1pbg=="
+	},
+	"mq": {
+		"url": "tcp://localhost:61616",
+		"username": "prmqadmin",
+		"password": "dG1xYWRtaW4=",
+		"queue": "prqueue",
+		"disabled": true
+	}
+}
+

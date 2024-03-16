@@ -1,0 +1,226 @@
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	font-size: unset;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	font-size: 18pt !important;
+}
+
+div {
+	position: relative;
+	display: inline-block;
+}
+
+#banner, #links, #main, #footer {
+	width: 100%;
+}
+
+#banner-inner, #links-inner, #main-inner, #footer-inner {
+	width: 60%;
+	margin-left: 20%;
+}
+
+#banner {
+	background-color: purple;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	color: aqua;
+}
+
+#links {
+	background-color: black;
+	height: 30px;
+	font-size: 14pt;
+}
+
+#main {
+	min-height: 90%;
+}
+
+#signup-div {
+	width: 50%;
+	height: 400px;
+	margin-left: 50%;
+	margin-top: 30%;
+}
+
+.signup-form {
+}
+
+.signup-form input[type=text], .signup-form input[type=password] {
+	width: 75%;
+	display: inline-block;
+	border: 2px solid black;
+	height: 40px;
+}
+
+.signup-form input[type=submit] {
+	width: 100%;
+	height: 45px;
+	background-color: black;
+	color: aqua;
+}
+
+.signup-form label {
+	width: 25%;
+	height: 40px;
+	display: inline-block;
+	background-color: black;
+	font-size: 14pt;
+	line-height: 290%;
+	color: white;
+}
+
+#login-form {
+	height: 30px;
+	float: right;
+}
+
+#login-form input[type=submit] {
+	background-color: purple;
+	color: aqua;
+	width: 295px;
+}
+
+#footer {
+	background-color: black;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+#footer-inner {
+	text-align: center;
+	color: white;
+	font-size: 8pt !important;
+}
+
+.logo {
+	font-size: 30pt !important;
+	color: aqua;
+}
+
+.motto {
+	font-size: 14pt !important;
+	color: aqua;
+	font-family: cursive;
+}
+
+a {
+	text-decoration: none;
+	color: aqua;
+}
+
+.plain-table {
+	width: 100%;
+	border-collapse: collapse;
+	border: 3px solid black;
+}
+
+.plain-table th, .plain-table td {
+	text-align: left;
+	vertical-align: top;
+	border: 2px solid black;
+}
+
+.plain-table th {
+	font-size: 14pt;
+}
+
+#link-buttons {
+	width: 100%;
+	height: 30px;
+	border-collapse: collapse;
+}
+
+#link-buttons th {
+	text-align: center;
+	vertical-align: middle;
+	color: white;
+	cursor: pointer;
+}
+
+#link-buttons th+th {
+	border-left: 2px solid white;
+}
+
+#link-buttons th:last-child {
+	border-right: 2px solid white;
+}
+
+#link-buttons th+th:hover {
+	background-color: purple;
+}
+
+.selected-page {
+	background-color: purple;
+}
+
+#roll {
+	width: 75%;
+	float: left;
+}
+
+#add-request-div {
+	width: 25%;
+	float: right;
+}
+
+#add-request-form {
+	width: 100%;
+}
+
+#add-request-form label {
+	width: 95%;
+    height: 40px;
+	vertical-align: top;
+    display: inline-block;
+    background-color: black;
+    font-size: 14pt;
+	line-height: 150%;
+    color: white;
+}
+
+#add-request-form input[type=checkbox] {
+	width: 5%;
+    display: inline-block;
+    height: 40px;
+	border: 10px solid black;
+	vertical-align: bottom;
+}
+
+#add-request-form textarea {
+	width: 100%;
+	height: 300px;
+	resize: none;
+	font-size: 14pt;
+	border: 2px solid black;
+}
+
+#add-request-form input[type=submit] {
+	width: 100%;
+    height: 45px;
+    background-color: black;
+    color: aqua;
+}
+
+#requests-table {
+	border-collapse: collapse;
+	width: 100%;
+	border: 3px solid black;
+}
+
+#requests-table td a {
+	color: darkblue;
+}
+
+#requests-table th, td {
+	text-align: left;
+	vertical-align: top;
+	border: 2px solid black;
+}
+
