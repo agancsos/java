@@ -36,7 +36,6 @@ public class SystemHelpers {
 		Process process    = Runtime.getRuntime().exec(command);
 		InputStream stream = process.getInputStream();
 		Scanner reader     = new Scanner(stream).useDelimiter("\\A");
-		//process.waitFor();
 		while (reader.hasNext()) {
 			result += reader.next();
 		}
