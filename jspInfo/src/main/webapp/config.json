@@ -1,0 +1,7 @@
+{
+	"environmentVariables": [
+	],
+	"commands": {
+		"TEST": "uname -a"
+	}
+}

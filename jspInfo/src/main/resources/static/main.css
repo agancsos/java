@@ -1,0 +1,115 @@
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	font-size: unset;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	font-size: 18pt !important;
+}
+
+div {
+	position: relative;
+	display: inline-block;
+}
+
+#banner, #links, #main, #footer {
+	width: 100%;
+}
+
+#banner-inner, #links-inner, #main-inner, #footer-inner {
+	width: 60%;
+	margin-left: 20%;
+}
+
+#banner {
+	background-color: black;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	color: orange;
+}
+
+#links {
+	background-color: black;
+	height: 30px;
+	font-size: 14pt;
+}
+
+#main {
+	min-height: 90%;
+	background-image: url("https://cdn.icon-icons.com/icons2/2699/PNG/512/apache_tomcat_logo_icon_167851.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+#footer {
+	background-color: black;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+#footer-inner {
+	text-align: center;
+	color: white;
+	font-size: 8pt !important;
+}
+
+.logo {
+	font-size: 30pt !important;
+	color: aqua;
+}
+
+a {
+	text-decoration: none;
+	color: orange;
+}
+
+.plain-table {
+	width: 100%;
+	border-collapse: collapse;
+	border: 3px solid black;
+}
+
+.plain-table th, .plain-table td {
+	text-align: left;
+	vertical-align: top;
+	border: 2px solid black;
+}
+
+.plain-table th {
+	font-size: 14pt;
+}
+
+#link-buttons {
+	width: 100%;
+	height: 30px;
+	border-collapse: collapse;
+}
+
+#link-buttons th {
+	text-align: center;
+	vertical-align: middle;
+	color: white;
+	cursor: pointer;
+}
+
+#link-buttons th+th {
+	border-left: 2px solid white;
+}
+
+#link-buttons th:last-child {
+	border-right: 2px solid white;
+}
+
+#link-buttons th+th:hover {
+	background-color: purple;
+}
+
+.selected-page {
+	background-color: purple;
+}
+
+
