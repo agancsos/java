@@ -17,12 +17,12 @@ import org.json.JSONObject;
 
 @RestController
 @RequestMapping(value="/api")
-class CommonApiControlle {
+class CommonApiController {
 	private ConfigurationService configService      = ConfigurationService.getInstance("");
 	private AuthenticationService authService       = null;
 
 	@Autowired
-	public CommonApiControlle() {
+	public CommonApiController() {
 		this.authService    = AuthenticationService.getInstance();
 	}
 
