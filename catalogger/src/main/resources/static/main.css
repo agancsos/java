@@ -1,0 +1,1266 @@
+* {
+    margin : 0;
+	padding : 0;
+	overflow-x : hidden;
+	border: 0;
+}
+
+textarea.task-field-value {
+    min-width: 100%;
+    min-height: 240;
+    resize: vertical;
+    font-family: Arial;
+}
+
+table input.task-field-value {
+    min-width: 100% !important;
+    min-height: 50px !important;
+    margin-bottom: 0 !important;
+    border: none !important;
+    font-family: Arial;
+}
+
+.task-step-remove {
+    background-color: transparent !important;
+    color: darkred !important;
+    cursor: pointer; 
+}
+
+.task-step-shift {
+	background-color: transparent !important;
+    color: rgb(0,50,0) !important;
+    cursor: pointer;
+}
+
+.object-disabled {
+    color: rgb(50, 0, 0) !important;
+	color: darkred !important;
+}
+
+.object-enabled {
+    color: rgb(0, 50, 0) !important;
+	color: darkgreen !important;
+}
+
+li {
+	font-weight: bold;
+}
+
+.task-category-li {
+	font-size: 16pt;
+	font-weight: normal !important;
+}
+
+.task-task-li {
+	cursor: pointer;
+	margin-left: 10px;
+	font-size: 13pt;
+    font-weight: normal !important;
+}
+
+.task-task-li:hover {
+	color: darkblue;
+	font-weight: bold;
+}
+
+.scrollable {
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+html {
+    height : 100%;
+	width : 100%;
+	overflow-y: visible !important;
+}
+
+body {
+	height : 100%;
+	width : 100%;
+	overflow-y: visible !important;
+}
+
+h1 {
+	color : white;
+}
+
+#agreement-div a {
+    color: rgb(0, 0, 90) !important;
+}
+
+.signup-disclaimer {
+	font-size: 11pt;
+}
+
+.signup-disclaimer a {
+	color: rgb(0, 40, 0);
+}
+
+div { 
+    position : relative;
+}
+
+a.signout-href {
+	color: white !important;
+}
+
+#banner, #links, #main, #footer {
+    width : 100%;
+}
+
+#banner a {
+	text-decoration: none;
+}
+
+.module-tools {
+	width: 100%;
+	height: 40px;
+	background-color: black;
+	text-align: right;
+	overflow: hidden;
+}
+
+.module-tools a {
+	color: white;
+	text-decoration: none;
+}
+
+.module-tools span {
+	cursor: pointer;
+}
+
+.module-tools span+span {
+	border-left: 2px solid white;
+}
+
+.module-tools button, .module-tools input[type=submit] {
+	height: 30px;
+	background-color: black;
+	color: white;
+	min-width: 200px;
+	text-align: center;
+	border-left: 2px solid white;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 14pt;
+}
+
+.add-module {
+	font-size: 18pt;
+	padding: 15px;
+	background-color: black;
+	color: white;
+}
+
+.h1 {
+	font-size :40pt;
+	/*color : white;*/
+	color : white;
+	text-decoration : none;
+}
+
+.h1 a {
+	color: white;
+	text-decoration : none;
+}
+
+#banner {
+    padding-top : 30px;
+    padding-bottom : 30px; 
+	/*background-color : rgb(0,0,90);*/
+	background-color : rgb(0, 40, 0);
+	text-align : left;
+}
+
+#banner marquee {
+	color: white;
+}
+
+#links{
+ 	background-image: -ms-linear-gradient(top left, #525252 0%, #00070A 100%);
+ 	background-image: -moz-linear-gradient(top left, #525252 0%, #00070A 100%);
+ 	background-image: -o-linear-gradient(top left, #525252 0%, #00070A 100%);
+ 	background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #525252), color-stop(1, #00070A));
+ 	background-image: -webkit-linear-gradient(top left, #525252 0%, #00070A 100%);
+ 	background-image: linear-gradient(to bottom right, #525252 0%, #00070A 100%);
+ 	height: 40px;
+	color : white;
+	font-size : 12pt;
+	font-family : Arial;
+	width : 100%;
+	overflow-y : hidden;
+}
+
+#links a {
+	color: rgb(0, 0, 90);
+	text-decoration: none;
+}
+
+#main {
+    min-height : 90%;
+	overflow-y: auto !important;
+	height: auto;
+}
+
+#footer {
+    padding-top : 40px;
+    padding-bottom : 40px;
+    font-size : 8pt; 
+	text-align : center;
+	background-color : black;
+	color : grey;
+}
+
+div#login-wrapper {
+	height: 40px;
+	width: 30%;
+	float: right;
+	margin: 0;
+}
+
+div#signup-wrapper {
+	margin-top: 10%;
+    width: 40% !important;
+    margin-left: 55% !important;
+    border: 2px solid black !important;
+}
+
+div#signup-wrapper form label {
+    width: 25%;
+	background-color: black;
+	height: 40px;
+	color: white;
+	float: left;
+	line-height: 300%;
+	overflow: hidden;
+}
+
+.module-textarea {
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    resize: none;
+}
+
+div#signup-wrapper form input {
+    width: 75%;
+	float: right;
+    height: 40px;
+	clear: right;
+}
+
+div#message-wrapper {
+    min-height: 1000px;
+}
+
+form#message-form {
+    width: 100%;
+}
+
+form#message-form input[type=text] {
+    width: 90% !important;
+    height: 30px !important;
+    outline: none;
+    border: 1px solid black;
+}
+
+form#message-form textarea {
+    width: 90% !important;
+    min-height: 30px !important;
+    outline: none;
+    display: inline-block;
+    float: left;
+    border: 1px solid black;
+    resize: none;
+}
+
+form#message-form input[type=submit] {
+    width: 10% !important;
+    min-height: 30px !important;
+}
+
+form#message-form label {
+    width: 10%;
+    display: inline-block;
+    padding-top: .45%;
+    padding-bottom: .4%;
+    overflow: hidden;
+    margin-bottom: -.7%;
+    background-color: black;
+    color: white;
+}
+
+#conversation-div {
+    width: 99.7%;
+    height: 93%;
+	overflow: hidden;
+	border: 3px solid black;
+}
+
+div#signup-wrapper form input[type=submit] {
+	width: 100%;
+	height: 30px;
+	background-color: black;
+	color: rgb(255, 255, 255);
+	cursor: pointer;
+}
+
+.wrapper-header {
+    width: 100% !important;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	text-align: center;
+	font-size: 14pt;
+	/*background-color: rgb(0, 0, 90);*/
+	background-color: black;
+	color: rgb(0, 200, 20);
+}
+
+#login-form{
+	margin:0;
+	padding: 0;
+	width: 100%;
+	display: inline;
+}
+
+#login-form input[type=text], #login-form input[type=password] {
+	height: 35px;
+	width: 50%;
+	font-size: 14pt; 
+	border-right : 2px solid black;
+	float: left;
+}
+
+#update-entry-form input[type=submit] {
+	width : 100% !important;
+	display: 30px inline-flex;
+}
+
+#login-form input[type=submit] {
+	height: 30px !important;
+	width: 20% !important;
+	float: right;
+	padding: none;
+	outline: none;
+	border: 0;
+	display: none;
+}
+
+#link-buttons, .link-buttons {
+ 	border-collapse: collapse;
+ 	width: 100% !important;
+	table-layout : fixed;
+	overflow: hidden;
+}
+
+#link-buttons th, .link-buttons th {
+ 	cursor: pointer;
+	color: white;
+	width: 20%;
+	height : 40px;
+	text-align: left !important;
+	font-size: 14pt;
+	border-right: 2px solid white;
+	vertical-align: center;
+}
+
+#link-buttons th+th, .link-buttons th+th {
+    border-left: solid 2px white;
+    text-align: center !important;
+	width: 10% !important;
+}
+
+#link-buttons th:last-child, .link-buttons th:last-child {
+	border-right: none !important;
+}
+
+#link-buttons th:first-child, .link-buttons th:first-child {
+	font-size: 1em;
+}
+
+input[type=image] {
+	width : 30px;
+	height : 30px;
+}
+
+#link-buttons th:hover{
+	/*background-color: rgb(0, 0, 90);*/
+}
+
+.selected-page, .link-buttons .selected-page {
+ 	/*background-color: rgb(0, 0, 90);
+	color : white;*/
+	background-color: black !important;
+	color : rgb(0, 0, 250) !important;
+}
+
+.cell-tools-div, #cell-tools-div {
+	float : right;
+	height: 100%;
+}
+
+.cell-tools-div img, #cell-tools-div img {
+	width : 30px;
+	height : 30px;
+}
+
+#link-buttons img {
+	height : 20px;
+	width : 20px;
+	float: right;
+}
+
+/*a {
+	text-decoration : none;
+	color : black !important;
+}*/
+
+
+#feedback-form {
+	margin-top : 10px;
+	width : 50%;
+	margin-left : 25%;
+}
+
+#feedback-form textarea {
+	width : 100%;
+	height : 79%;
+	resize : none;
+	font-size : 14pt;
+	border : 2px solid black;
+}
+
+#feedback-form input[type=submit], .settings-form .form-table input[type=submit] {
+	width : 100%;
+	height : 40px;
+	border : 2px solid black;
+	background-color : black;
+	color: white;
+	cursor : pointer;
+	font-size : 16pt;
+}
+
+.form-table {
+	border-collapse : collapse;
+	border : none;
+	width : 100%;
+}
+
+.form-table th {
+	text-align : left;
+}
+
+.center-div {
+	width : 50%;
+	margin-left : 25%;
+}
+
+.settings-form {
+    margin-top : 10px;
+    width : 100%;
+}
+
+.settings-form .form-table input[type=password], .settings-form .form-table input[type=text] {
+	width : 100%;
+}
+
+.settings-form input[type=submit] {
+	width: 100%;
+	background-color: black !important;
+}
+
+.settings-form input[type=checkbox] {
+	width: 45px;
+	cursor: pointer;
+	height: 40px;
+	display: inline-block;
+	margin-top: 10px !important;
+	padding: none;
+	float: right;
+	clear: right;
+}
+
+label {
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.settings-form .form-table td {
+	font-size : 14pt;
+}
+
+#search-form {
+	height : 100%;
+	overflow-y: hidden;
+}
+
+#search-form input[type=text] {
+	width : 100%;
+	background-color : black;
+	color: white;
+	height : 100%;
+	font-size : 14pt;
+	overflow: hidden;
+}
+
+.grid-container {
+	width : 100%;
+	min-height: 100vh !important;
+	height: auto;
+	display: grid;
+	grid-template-columns: 30% 70%;
+	grid-template-rows: 100%;
+	grid-template-areas: "s1 s2";
+	grid-gap: 0;
+	border: 2px solid black;
+	overflow: hidden;
+}
+
+.grid-container2 {
+    width : 100%;
+    min-height: 100vh !important;
+	height: auto;
+    display: grid;
+    grid-template-columns: 30% 1% 69%;
+    grid-template-rows: 60% 1% 39%;
+    grid-template-areas: "s1 s5 s2"
+						 "s6 s5 s2"
+						 "s3 s5 s4";
+    grid-gap: 0;
+    border: 2px solid black;
+	overflow: hidden;
+}
+
+.grid-left {
+	grid-area: s1;
+	border : 2px solid black;
+    display: inline-block;
+    min-height: 100%;
+	height: auto;
+    overflow: hidden;
+}
+
+.grid-left2 {
+	grid-area: s1;
+    width : 16.5%;
+    border : 2px solid black;
+    display: inline-block;
+	max-height: 100%;
+	overflow: hidden;
+	height: auto;
+}
+
+.grid-right {
+	grid-area: s2;
+	height: auto;
+	border: 2px solid black !important;
+}
+
+#settings-form-div {
+	width : 100%;
+	grid-area: s2
+}
+
+#category-table {
+	width : 100%;
+	padding-bottom : 53%;
+}
+
+#category-table .selected-page {
+	color : white;
+}
+
+#category-table tr {
+	cursor : pointer;
+}
+
+#category-table td {
+	height : 40px;
+	vertical-align : center;
+	font-size : 14pt;
+	text-align : center;
+	border : 3px solid black;
+}
+
+#settings-form {
+	width : 50% !important;
+	left : 25%;
+}
+
+.settings-form input[type=password], .settings-form input[type='text'] {
+	width : 75%;
+	height : 40px;
+	border : 2px solid black;
+	display : inline-block;
+	float : right;
+	clear : right;
+	font-size : 14pt;
+}
+
+.settings-form input[type=submit] {
+	width : 100%;
+	height : 50px;
+	font-size : 14pt;
+	background-color : rgb(0, 50, 0);
+	color : white;
+}
+
+.settings-form label {
+	width : 25% !important;
+	height : 40px !important;
+	background-color : black;
+	color : white;
+	display : inline-block;
+	text-align : left;
+	line-height : 250%;
+	overflow-y : hidden;
+	float : left;
+	clear : left;
+	font-size : 14pt;
+}
+
+
+.dict-table {
+	width : 100%;
+	border-collapse : collapse;
+}
+
+.dict-table td,th {
+	border : 2px solid black;
+}
+
+.dict-table th {
+	text-align : left;
+	width : 25%;
+}
+
+.dict-table td {
+	text-align : left;
+	height : 40px;
+}
+
+.form-table {
+	width : 100%;
+}
+
+.form-table td {
+	height : 30px;
+	border : 2px solid black;
+}
+
+.form-table input {
+	height : 30px !important;
+	font-size : 14pt;
+	width : 100% !important;
+}
+
+.del-button {
+	color : white !important;
+}
+
+.view-borrows-button {
+	background-color: darkblue !important;
+	color: white;
+}
+
+.del-button:enabled {
+	background-color : rgb(100, 0, 0) !important;
+}
+
+.del-button:disabled {
+	background-color: grey !important;
+}
+
+.add-button {
+	background-color : rgb(0,0, 0);
+	color : white;
+}
+
+.login-button {
+	background-color : rgb(0, 0, 50);
+	color : white;
+}
+
+ul,li {
+	list-style-position: inside;
+}
+
+.object-tree {
+	font-size : 14pt;
+	flex-grow: 1; 
+	flex-basis: 0;
+	grid-area: ss1;
+}
+
+.toolbar-div {
+	width : 100%;
+	height : 30px;
+	background-color : black;
+}
+
+.toolbox-form input[type=submit] {
+	height : 30px;
+}
+
+.menu-option:hover {
+	background-color: rgb(0, 0, 50) !important;
+	color: white !important;
+}
+
+.context-menu {
+  width: 250px;
+  box-shadow: 0 4px 5px 3px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  display: none;
+
+  .menu-options {
+    list-style: none;
+    padding: 10px 0;
+
+    .menu-option {
+      font-weight: 500;
+      font-size: 14px;
+      padding: 10px 40px 10px 20px;
+      cursor: pointer !important;
+
+      &:hover {
+        background: rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+}
+
+.tree-div {
+	border: 2px solid black;
+	grid-area: s1;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+.properties-div {
+	grid-area: s3;
+	border: 2px solid black;
+}
+
+.instances-div {
+	grid-area: s4;
+	border: 2px solid black;
+}
+
+.plain-table {
+    width : 100% !important;
+    border-collapse : collapse !important;
+    border-collapse: collapse;
+    border : 2px solid black !important;
+	cursor: pointer;
+}
+
+.plain-table a {
+	text-decoration: none;
+	color: rgb(0, 40, 0);
+}
+
+#basic-table {
+	width: 100% !important;
+	border-collapse: collapse !important;
+	border: 2px solid black !important;
+	overflow-y:scroll;
+}
+
+#basic-table th {                                                                                                                                                                                        
+    border : 2px solid black !important;                                                                                                                                                                                  
+    text-align : left !important;                                                                                                                                                                                         
+}
+
+#basic-table td {                                                                                                                                                                                        
+    height : 30px;                                                                                                                                                                                                        
+    border: 2px solid black;                                                                                                                                                                                              
+}
+
+
+.plain-table td{
+    height : 30px;
+    border: 2px solid black;
+}
+
+.plain-table th{
+    border : 2px solid black !important;
+    text-align : left !important;
+}
+
+#feedback-form label {
+	border: 2px solid black !important;
+	font-size: 12pt !important;
+}
+
+#feedback-form input[type=text] {
+	height: 30px !important;
+	font-size: 12pt !important;
+}
+
+.title-splitter {
+	width:100% !important; 
+	height:5px; 
+	background-color:black
+}
+
+#ns-pane-splitter {
+	background-color: black;
+	cursor: ns-resize !important;
+	grid-area: s6;
+}
+
+#we-pane-splitter {
+    background-color: black;
+    cursor: ew-resize;
+	grid-area: s5
+}
+
+.editor-form {
+	width: 100%;
+}
+
+div.split-view {
+	width: 100%;
+	height: 100%;
+	display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto-fill;
+    grid-template-areas: "s1 s2";
+    grid-gap: 0;
+    border: 2px solid black;
+    overflow: hidden;
+}
+
+div.split-view-left {
+	display: grid-block !important;
+	border-right: 2px solid black !important;
+}
+
+div.split-view-right {
+	display: grid-block !important;
+}
+
+.editor-form label {
+	width: 25% !important;
+	height: 40px !important;
+	font-size: 13pt !important;
+	background-color: black !important;
+	color: white !important;
+	line-height: 250% !important;
+	/*margin-bottom: 5px !important;*/
+	float: left;
+}
+
+.editor-form input[type="text"], .editor-form select, .editor-form input[type="password"], .editor-form input[type="datetime-local"] {
+	width: 75% !important;
+	border: 2px solid black !important;
+	height: 40px !important;
+	font-size: 13pt !important;
+	margin-bottom: 5px !important;
+}
+
+.editor-form input[type="submit"] {
+	width: 33.13% !important;
+	height: 50px !important;
+	border: 2px solid black !important;
+	background-color: rgb(0,0,0) !important;
+	color: white !important;
+	font-size: 14pt;
+}
+
+.editor-form input[type="submit"]+input[type="submit"] {
+	margin-left: 0.30% !important;
+}
+
+.editor-form input[type="submit"]:disabled {
+    background-color: rgb(50,50, 50) !important;
+    color: white !important;
+}
+
+input.del-button {
+    background-color: rgb(50,0, 0) !important;
+    color: white !important;
+}
+
+#html-wrapper {
+	width: 100%;
+	height: 100%;
+}
+
+#html-wrapper .html-text-wrapper {
+	width: 50%;
+	height: 100%;
+	left: 25%;
+	font-size: 14pt;
+}
+
+div.feed-wrapper {
+	margin-top: 10px;
+	width: 50%;
+	left: 25%;
+	/*border: 3px solid black;*/
+	height: 100%;
+	overflow: hidden;
+}
+
+div.feed-form-wrapper {
+	height: 100px;
+	width: 100%;
+	overflow: hidden;
+	/*border: 2px solid black;*/
+}
+
+div.feed-wrapper .feed-form-wrapper textarea {
+	width: 100%;
+	height: 70px;
+	font-size: 14pt;
+	background-color: black;
+	color: white;
+	resize: none;
+	border: none;
+	outline: none;
+	vertical-align: top;
+	display: block !important;
+}
+
+div.feed-wrapper .feed-form-wrapper input[type=submit] {
+	background-color: rgb(0, 0, 90);
+	color: white;
+	width: 25%;
+	float: right;
+	height: 30px;
+}
+
+div.feed-wrapper .feed-form-wrapper input[type=text] {
+    width: 75%;
+    float: left;
+    height: 30px;
+	outline: none;
+	border: 2px solid black;
+}
+
+div.feed-entry-wrapper {
+	border: 1px solid black;
+	margin-top: 10px;
+}
+
+.feed-entry-wrapper .feed-entry-wrapper {
+	border: none;
+	margin-top: -10px;
+}
+
+div.org-entry-wrapper {
+	/*border: 3px solid black;*/
+	margin-top: 10px;
+}
+
+img.feed-entry-avatar {
+	width: 40px;
+	height: 40px;
+	border: 2px solid black;
+	float: left;
+}
+
+.org-entry-text {
+	resize: none;
+	width: 97%;
+	outline: none;
+	min-height: 60px;
+	/*float: right;*/
+	border: 2px black solid;
+	display: inline-block;
+}
+
+div.feed-reply-wrapper {
+	width: 95.5%;
+	left: 5%;
+}
+
+div.feed-reply-wrapper textarea {
+	width: 90%;
+	height: 30px;
+	border: 2px solid black;
+	resize: none;
+	outline: none;
+}
+
+div.feed-reply-wrapper input[type=submit] {
+	height: 30px;
+	background-color: rgb(0, 0, 90);
+	float: right;
+	color: white;
+	width: 10%;
+}
+
+textarea.blog-entry {
+	width: 100%;
+	height: 96%;
+	resize: none;
+	font-size: 13pt;
+	line-height: 12pt;
+	font-family: Times New Roman;
+	overflow: hidden;
+}
+
+.plain-form {
+	width: 100%;
+}
+
+.plain-form label {
+	width: 50%;
+	float: left;
+	clear: left;
+	height: 30px;
+	background-color: black;
+	color: white;
+}
+
+.plain-form input[type=text], .plain-form input[type=password] {
+	width: 50%;
+	height: 30px;
+	float: right;
+	clear: right;
+	border: 2px solid black;
+}
+
+.plain-form input[type=checkbox] {
+    float: right;
+    clear: right;
+    height: 30px;
+    width: 30px;
+}
+
+.plain-form select {
+	width: 50%;
+	height: 30px;
+	border: 2px solid black;
+}
+
+.plain-form textarea {
+	width: 100%;
+	height: 80%;
+	border: 2px solid black;
+	resize: none;
+}
+
+.plain-form input[type=submit] {
+	width: 100%;
+	height: 40px;
+	background-color: black;
+	color: white;
+	cursor: pointer;
+}
+
+input[type=text].blog-entry {
+	width: 100%;
+	height: 30px;
+	border: 2px solid black;
+}
+
+div.blog-entry-tools {
+	width: 100%;
+	height: 2%;
+	border: 2px solid black;
+}
+
+div.blog-entry-tools input {
+	height: 100%;
+	background-color: rgb(0, 0, 90);
+	color: white;
+	width: 25%;
+	outline: none;
+}
+
+div.blog-entry-tools input[type=reset] {
+	background-color: rgb(90, 0, 0);
+}
+
+div.blog-entry-tools input+input {
+	border-left: 2px solid white;
+}
+
+div.blog-entry-tools .del {
+	background-color: rgb(90, 0, 0);
+	color: white;
+}
+
+table input[type=submit] {
+	width: 100%;
+	height: 100%;
+}
+.switch:before {
+  content: "";
+  height: 30px;
+  width: 400px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .switch {
+  background-color: #2196F3;
+}
+
+input:focus + .switch {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .switch:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.switch {
+  display: inline-block;
+  cursor: pointer;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.options-table {
+	cursor: pointer;
+}
+
+.options-table tr:hover {
+	background-color: rgb(0, 0, 50);
+	color: white;
+}
+
+.message-metadata {
+	width: 100% !important;
+}
+
+.message-metadata span {
+	width: 49% !important;
+}
+
+
+input[type="text"].list-editor {
+	width: 33.16% !important;
+	height: 40px !important;
+	display: inline-block !important;
+	clear: none !important;
+	float: none !important;
+	padding: none !important;
+}
+
+input[type="submit"].list-editor {
+	width: 33.16% !important;
+	border: 2px solid black !important;
+	height: 40px !important;
+	display: inline-block !important;
+	padding: 0 !important;
+	font-size: 18px !important;
+}
+
+input.list-editor+input.list-editor {
+	margin-left: 0.26% !important;
+}
+
+li {
+	background-size: 10px !important;
+	list-style: none !important;
+	background-repeat: no-repeat;
+}
+
+li:before {
+	content: "";
+	height: 10px !important;
+	width: 10px !important;
+	display: inline-block !important;
+	margin-right: 6px !important;
+}
+
+li a {
+	text-decoration: none;
+	color: black;
+	font-family: Consolas;
+}
+
+.association-label {
+	min-width: 75% !important;
+	width: 75% !important;
+	height: 40px !important;
+}
+
+input[type="submit"].association-button {
+	width: 24.7% !important;
+    height: 40px !important;
+	margin-left: 0.30% !important;
+    background-color: rgb(0,0,0) !important;
+    color: white !important;
+    font-size: 14pt;
+}
+
+.association-label+.association-label {
+    margin-left: 0.26% !important;
+	text-align: center;
+}
+
+#perm-user-div, #perm-perm-div {
+	width: 100%;
+	height: 50%;
+	border: 2px solid black;
+}
+
+#perm-user-div {
+}
+
+#perm-perm-div {
+}
+
+div#overlay {
+	position: absolute;
+	display: absolute !important;
+	width: 100%;
+	height: 100%;
+	z-index: 99;
+	background-color: white;
+	overflow: hidden;
+}
+
+.left {
+	float: left;
+	clear: left;
+}
+
+.right {
+	float: right;
+	clear: right;
+}
+
+.task-step-container {
+	border: 2px solid black;
+	margin-top: 10px;
+}
+
+#loader {
+	border: 16px solid #f3f3f3;
+	border-top: 16px solid rgb(0, 40, 0);
+	border-radius: 50%;
+	width: 120px;
+	height: 120px;
+	margin-top: 20%;
+	margin-left: 50%;
+	animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+
+.plain-table tr:hover {
+	background-color: black !important;
+	color: white;
+}
+
+.server-log-textarea {
+	width: 100%;
+	height: 100%;
+	resize: none;
+}
+

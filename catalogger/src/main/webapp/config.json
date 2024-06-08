@@ -1,0 +1,18 @@
+{
+	"database": {
+		"provider": "postgres",
+		"server": "127.0.0.1",
+		"database": "catalogger",
+		"dbaUsername": "postgres",
+		"dbaPassword": "cG9zdGdyZXM=",
+		"username": "catadmin",
+		"password": "Y2F0YWRtaW4K"
+	},
+	"mq": {
+		"url": "tcp://localhost:61616",
+		"username": "catadmin",
+		"password": "dG1xYWRtaW4=",
+		"queue": "catqueue",
+		"disabled": true
+	}
+}
